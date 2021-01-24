@@ -23,3 +23,10 @@ class IronMan {
 const stf = new IronMan('steel')
 
 //这样类内的iron就赋值成功了 这是最简洁的方式
+//利用constructor 为值进行赋值
+
+class Father extends IronMan {
+    constructor(public name:string){
+        super('iron')//子类要有构造器必须调用super方法
+    }
+}

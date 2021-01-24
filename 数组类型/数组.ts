@@ -1,4 +1,4 @@
- //可变类型
+ //可变类型 类型就是在 【】前面加上类型
  const arr: (string|number)[] =[1,'2',3];
  const arr2:string[]=['1','2','3'];
  //如果类型太长那么就用 type alias 类型别名来记录
@@ -17,6 +17,7 @@
  ]
 
  //元组对所有的元素进行约束 对每个元素类型进行限制 如果匹配不上那么会报错
+ //处理csv
  const teacherInfo2:[string,string,number]=['Dell','male',18]
  //元组 Ts有 tuple
  const teacherInfo=['Dell','male',18];
